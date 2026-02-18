@@ -1,1 +1,144 @@
+@font-face {
+    font-family: "VCR Mono"; 
+    src: url("fonts/mono/VCR_OSD_MONO_1.001 2.ttf") format("truetype");
+    /* or: */
+    src: url("fonts/mono/VCR_OSD_MONO_1.001.ttf") format("opentype");
+}
+
+body {
+  font-family: "VCR Mono";
+  background: #f4d368;
+  font-size: 0.9em;
+}
+
+.container{
+  background: #f4d368;
+  align-items: center;
+  width: 75%;
+  min-width:400px;
+  margin:auto;
+  display:flex;
+}
+
+.box{
+  background: #f4d368;
+  width: 70%;
+  min-width:400px;
+  margin:auto;
+}
+
+.box h3{
+  margin:0px
+}
+
+.box h2{
+  margin-bottom:0px
+}
+
+.box p {
+  margin: 0px; 
+}
+
+.btn-r{
+  padding:0px 0px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "VCR Mono";
+  background:none;
+  margin-left: 5%;
+  width: 20%;
+  transform: rotate(10deg);
+}
+
+.right{
+  margin: 0px;
+  margin-left: auto;
+  padding: 0px;
+}
+
+.btn-l{
+  padding:0px 0px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+  font-family: "VCR Mono";
+  background:none;
+  text-align: left;
+  width: 20%;
+  transform: rotate(350deg);
+}
+
+.btn-1 img{
+  width: 100%;
+}
+
+.btn-1:hover{
+  filter: brightness(110%);
+  transform: scale(1.2);
+}
+
+.btn-r img{
+  width: 100%;
+}
+
+.btn-r:hover{
+  filter: brightness(110%);
+  transform: scale(1.2), ;
+  transform: rotate(3deg);
+}
+
+.popup{
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.5); /* dim background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+
+.popup-content {
+  background: white;
+  border: 2px dotted #727782;
+  width: 800px;
+  max-height: 80%;
+  overflow: auto;
+  padding: 30px;
+  justify-content: center;
+  align-items: center;
+}
+
+.open-popup{
+  visibility: visible;
+}
+
+.popup img{
+  width: 100px;
+}
+
+.head {
+ width:75%; 
+ min-width:400px;
+ margin:auto;
+ display: block;
+}
+
+div.gallery-grid img {
+width: 300px;
+}
+
+div.gallery-grid {
+display: grid;
+grid-template-columns: auto auto auto;
+grid-row-gap: 20px ;
+justify-items: center;
+align-items: start;
+justify-content: space-between;
+}
+.gallery-item {
+width: 300px; /*should match the width of your images + width of border (if
+any) */
+text-align:center;
+}
 
